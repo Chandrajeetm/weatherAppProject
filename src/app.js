@@ -2,6 +2,14 @@ const express=require('express');
 const path=require("path");
 const hbs=require("hbs");
 const app=express();
+// new fs
+const fs=require('fs');
+const dat=fs.readFileSync("../textFiles/hello.txt");
+const causesDat=fs.readFileSync("../textFiles/causes.txt");
+const shapingDat=fs.readFileSync("../textFiles/shaping.txt");
+// console.log(dat.toString());
+// end
+
 const port= 3000;
 
 
@@ -26,6 +34,13 @@ app.get("/about",(req,res)=>{
 })
 app.get("/weather",(req,res)=>{
     res.render("weather");
+})
+app.get("/weatherinfo",(req,res)=>{
+    res.render("weatherInfo",{
+        wiki: dat,
+        causeswiki:causesDat,
+        shaping:shapingDat
+    });
 })
 app.get("/overpage",(req,res)=>{
     res.render("overpage");
