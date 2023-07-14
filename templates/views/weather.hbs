@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+        <div class=" row ">
+            <div class="col-md-10 col-12 mx-auto ">
+                <div class="main_content">
+                    <form class="temp_form ">
+                        <input type="text" id="cityName" placeholder="Enter Your City Name" autocomplete="off">
+                        <input type="submit" value="Search" id="submitBtn">
+                    </form>
+                </div>
+                <div class="tempInformation">
+                    <div class="top_layer">
+                        <p id="day">Tuesday</p>
+                        <p id="today_date">13 Oct</p>
+                    </div>
+                    <div class="main_layer">
+                        <p id="city_name">Your result is here.</p>
+                        <div class="middle_layer data_hide">
+                            <p id="temp"><span id="tempHere">0</span><sup>0</sup>C</p>
+                            <p id="temp_status"> <i class="fa-solid fa-sun fa-spin"></i></p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="card text-center more_card more_card_hide ">
+                <div class="card-header card-header2">
+                    MORE INFORMATION
+                </div>
+                <div class="card-body card-body2">
+                    <div class="row " id="card-bodyid">
+                        <div class="col-md-6 col-12 more_left ">
+                            <p >Humidity : <span id="humidity"></span></p>
+                            <p >Pressure :<span id="pressure"></span></p>
+                            <p >Sea level : <span id="sea_level"></span></p>
+                            <p > Visibility :<span id="visibility"></span></p>
+                        </div>
+                        <div class="col-md-6 col-12 more_right ">
+                            <p >Temp max : <span id="temp_max"></span> <sup>o</sup>C</p>
+                            <p >Temp min : <span id="temp_min"></span><sup>o</sup>C</p>
+                            <p >Status : <span id="statuss"></span></p>
+                            <p >Wind speed : <span id="wind_speed"></span></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    {{>footer}}
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

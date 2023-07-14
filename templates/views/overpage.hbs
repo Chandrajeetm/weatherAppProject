@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>headerlinks}}
+    <link rel="stylesheet" href="css/more.css">
+
+</head>
+
+<body>
+    {{>navbar}}
+
+    <div class="container-fluid main_header">
+
+        <div class="more_top_div">
+            <p id="more_city">goa,In</p>
+            <p id="more_temp">temp:30</p>
+            <p id="more_date">date</p>
+            <a href="/weather">back</a>
+        </div>
+
+        <div class=" row ">
+            <div class="col-md-10 col-12 mx-auto ">
+
+                <div class=" row ">
+                    <div class="col-md-10 col-12 mx-auto ">
+                        <div class="row">
+                            <div class="col-md-6 col-12 more_left ">
+                                <p id="humidity">humidity</p>
+                                <p id="pressure">pressure</p>
+                                <p id="sea_level">sea_level</p>
+                                <p id="visibility"> visibility</p>
+                            </div>
+                            <div class="col-md-6 col-12 more_right ">
+                                <p id="temp_max">temp_max</p>
+                                <p id="temp_min">temp_min</p>
+                                <p id="status">status</p>
+                                <p id="wind_speed">wind speed</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+
+
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
